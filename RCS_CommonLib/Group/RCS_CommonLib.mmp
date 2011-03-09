@@ -1,0 +1,15 @@
+
+target                                  RCS_CommonLib.lib
+TARGETTYPE	  			lib
+
+UID                                     0
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include \epoc32\include\ecom
+
+SOURCEPATH ..\src
+SOURCE fileutils.cpp aes.cpp processes.cpp LogCleaner.cpp GPSPosition.cpp Phone.cpp timeouttimer.cpp longruntask.cpp
+SOURCE RESTUtils.cpp ShaUtils.cpp TimeUtils.cpp
+
+//MACRO _LOGGING
+

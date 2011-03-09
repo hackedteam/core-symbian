@@ -1,0 +1,20 @@
+// bld.inf
+//
+// Copyright (c) 2000 Symbian Ltd.  All rights reserved.
+//
+
+PRJ_PLATFORMS
+gcce winscw
+
+PRJ_EXPORTS
+..\inc\SharedQueue.pan HT\SharedQueue.pan
+..\inc\SharedQueueErr.h HT\SharedQueueErr.h
+..\inc\SharedQueueCliSrv.h HT\SharedQueueCliSrv.h
+
+..\inc\SharedQueue.h HT\SharedQueue.h
+..\inc\AbstractQueueEndPoint.h HT\AbstractQueueEndPoint.h
+..\inc\PubSubObserver.h HT\PubSubObserver.h
+
+PRJ_MMPFILES
+SharedQueueSrv.mmp
+SharedQueueCli.mmp

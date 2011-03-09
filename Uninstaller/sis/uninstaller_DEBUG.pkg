@@ -1,0 +1,38 @@
+; Installation file for Symbian OS 9.x for generic console application
+; Installation file for Uninstaller EXE
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+
+;
+; UID is the exe's UID
+;
+#{"Uninstaller"},(0x200305DB),1,0,0
+
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;Supports 3rd
+[0x101F7961], 0, 0, 0,{"Series60ProductID"}
+ 
+;Supports 3rd FP1
+[0x102032BE], 0, 0, 0,{"Series60ProductID"}
+
+;Supports 3rd FP2
+[0x102752AE], 0, 0, 0,{"Series60ProductID"}
+ 
+;Supports 5th
+[0x1028315F], 0, 0, 0,{"Series60ProductID"}
+
+
+
+"C:\Symbian\9.1\S60_3rd_MR_3\epoc32\release\gcce\udeb\uninstaller.exe"		  -"C:\sys\bin\uninstaller.exe"
+

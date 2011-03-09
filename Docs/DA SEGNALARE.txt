@@ -1,0 +1,54 @@
+
+Le capabilities sono state impostate in maniera da consentire uno sviluppo agevole.
+Ad ogni modo, non sono state utilizzate capabilities privilegiate.
+
+
+Patch durante loadconfig che mappa Tasks -> Calendar e AddressBook... Il mapping pero' non c'e' a livello di Action->StartAgent
+
+Non si e' utilizzato il metodo fornito da HT per il calcolo della distanza, ma quello nativo che pare fornire una stima piu' precisa.
+Il codice e' cmq. presente, ma al momento commentato.
+
+Per ora e' stato diviso in varie DLL per rendere piu' semplice la comprensione...
+Eventualmente, e' possibile incorporare tutto nel CORE.
+
+
+
+Mapping con i vari campi...
+
+
+FAX (business)
+ KUidContactFieldFaxValue
+ KIntContactFieldVCardMapFAX
+ KIntContactFieldVCardMapWORK
+ 
+Telephone (business)
+ KUidContactFieldPhoneNumberValue
+ KIntContactFieldVCardMapVOICE
+ KIntContactFieldVCardMapWORK
+
+Mobile (business)
+ KUidContactFieldPhoneNumberValue 
+ KIntContactFieldVCardMapCELL
+ KIntContactFieldVCardMapWORK
+
+
+FAX
+ KUidContactFieldFaxValue
+ KIntContactFieldVCardMapFAX
+
+Telephone 
+ KUidContactFieldPhoneNumberValue
+ KIntContactFieldVCardMapVOICE
+
+Mobile 
+ KUidContactFieldPhoneNumberValue 
+ KIntContactFieldVCardMapCELL
+
+
+Mobile (home)
+ KUidContactFieldPhoneNumberValue 
+ KIntContactFieldVCardMapCELL
+ KIntContactFieldVCardMapHOME
+
+
+

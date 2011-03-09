@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO dispatcher
+	{
+	executable_name = "!:\\sys\\bin\\Autostart_2002EF7C.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

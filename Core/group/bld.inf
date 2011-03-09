@@ -1,0 +1,19 @@
+
+PRJ_PLATFORMS
+GCCE WINSCW
+
+
+PRJ_EXPORTS
+..\inc\AbstractAction.h HT\AbstractAction.h
+..\inc\ActionFactory.h HT\ActionFactory.h
+
+..\inc\AbstractAgent.h HT\AbstractAgent.h
+..\inc\AgentFactory.h HT\AgentFactory.h
+..\inc\LogFile.h HT\LogFile.h
+
+..\inc\AbstractEvent.h HT\AbstractEvent.h
+..\inc\EventFactory.h HT\EventFactory.h
+
+
+PRJ_MMPFILES
+Core.mmp

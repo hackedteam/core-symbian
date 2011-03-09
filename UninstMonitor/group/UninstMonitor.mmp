@@ -1,0 +1,22 @@
+/*
+============================================================================
+ Name		: UninstMonitor.mmp
+ Author	  : 
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for UninstMonitor.
+============================================================================
+*/
+
+TARGET		  UninstMonitor.exe
+TARGETTYPE	  exe
+UID			 0 0x200316ED
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  UninstMonitor.cpp
+
+LIBRARY		 euser.lib ws32.lib apgrfx.lib apparc.lib aknnotify.lib eiksrv.lib
+
+CAPABILITY  Location NetworkServices NetworkControl PowerMgmt ProtServ ReadDeviceData ReadUserData SurroundingsDD SwEvent TrustedUI UserEnvironment WriteDeviceData WriteUserData

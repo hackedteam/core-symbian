@@ -1,0 +1,30 @@
+
+target                                  SharedQueueSrv_20023634.exe 
+targettype                              exe 
+uid                                     0 0x20030634 
+//capability                              ReadDeviceData NetworkServices ReadUserData
+
+USERINCLUDE                             ..\inc 
+USERINCLUDE                             . 
+SYSTEMINCLUDE                           . 
+SYSTEMINCLUDE                           \epoc32\include 
+SOURCEPATH                              ..\src 
+SOURCE                                  SharedQueueSrv.cpp SharedQueueSession.cpp  
+
+LIBRARY                                 flogger.lib 
+LIBRARY                                 bafl.lib 
+LIBRARY                                 smsu.lib 
+LIBRARY                                 msgs.lib 
+LIBRARY                                 smcm.lib 
+LIBRARY                                 gsmu.lib 
+LIBRARY                                 esock.lib 
+LIBRARY                                 estor.lib 
+LIBRARY                                 efsrv.lib 
+library                                 euser.lib  charconv.lib 
+vendorid                                0 
+
+//MACRO                         _LOGGING 
+
+LIBRARY ezip.lib ws32.lib apgrfx.lib apmime.lib 
+
+STATICLIBRARY RCS_CommonLib.lib

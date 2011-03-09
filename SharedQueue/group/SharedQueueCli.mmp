@@ -1,0 +1,24 @@
+
+target                                  SharedQueueCli_20023633.dll 
+targettype                              dll
+
+EPOCALLOWDLLDATA 
+
+capability                              ALL -DRM -TCB -AllFiles -DiskAdmin -MultimediaDD -NetworkControl //-CommDD
+
+
+UID                                     0x1000008d 0x20030633
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include \epoc32\include\ecom
+
+SOURCEPATH ..\src
+SOURCE AbstractQueueEndPoint.cpp SharedQueue.cpp pubsubobserver.cpp
+
+LIBRARY euser.lib flogger.lib efsrv.lib
+
+nostrictdef
+
+//EXPORTUNFROZEN
+
+//MACRO                         _LOGGING 

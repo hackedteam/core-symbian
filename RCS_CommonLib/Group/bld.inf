@@ -1,0 +1,24 @@
+// bld.inf
+//
+// Copyright (c) 2000 Symbian Ltd.  All rights reserved.
+//
+
+PRJ_PLATFORMS
+gcce winscw
+
+PRJ_EXPORTS
+..\inc\Logging.h \epoc32\include\HT\Logging.h
+..\inc\FileUtils.h \epoc32\include\HT\FileUtils.h
+..\inc\AES.h \epoc32\include\HT\AES.h
+..\inc\RESTUtils.h \epoc32\include\HT\RESTUtils.h
+..\inc\ShaUtils.h	\epoc32\include\HT\ShaUtils.h
+..\inc\TimeUtils.h	\epoc32\include\HT\TimeUtils.h
+..\inc\Processes.h \epoc32\include\HT\Processes.h
+..\inc\GPSPosition.h \epoc32\include\HT\GPSPosition.h
+..\inc\Phone.h \epoc32\include\HT\Phone.h
+..\inc\TimeOutTimer.h \epoc32\include\HT\TimeOutTimer.h
+..\inc\LogCleaner.h \epoc32\include\HT\LogCleaner.h
+..\inc\LongRunTask.h \epoc32\include\HT\LongRunTask.h
+
+PRJ_MMPFILES
+RCS_CommonLib.mmp

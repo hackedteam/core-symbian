@@ -1,0 +1,7 @@
+#include <startupitem.rh>
+
+RESOURCE STARTUP_ITEM_INFO startexe
+	{
+	executable_name = "!:\\sys\\bin\\SharedQueueMon_20023635.exe";
+	recovery = EStartupItemExPolicyNone;
+	}

@@ -1,0 +1,25 @@
+/*
+============================================================================
+ Name		: Uninstaller.mmp
+ Author	  : 
+ Copyright   : 
+ Description : This is the project specification file for Uninstaller.
+============================================================================
+*/
+
+TARGET		  Uninstaller.exe
+TARGETTYPE	  exe
+UID			 0 0x200305DB
+VENDORID		0
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  Uninstaller.cpp
+
+LIBRARY		 euser.lib 
+LIBRARY		 swinstcli.lib   
+
+capability  Location NetworkServices NetworkControl PowerMgmt ProtServ ReadDeviceData ReadUserData SurroundingsDD SwEvent TrustedUI UserEnvironment WriteDeviceData WriteUserData
+

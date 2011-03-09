@@ -1,0 +1,5 @@
+#include <..\RCS_CommonLib\group\bld.inf>
+#include <..\SharedQueue\group\bld.inf>
+#include <..\Core\group\bld.inf>
+#include <..\Uninstaller\group\bld.inf>
+#include <..\UninstMonitor\group\bld.inf>

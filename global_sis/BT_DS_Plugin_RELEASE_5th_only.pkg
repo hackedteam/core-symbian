@@ -1,0 +1,37 @@
+; BT_DS_Plugin_RELEASE_5th_only.pkg
+;
+
+; standard SIS file header
+#{"BT DS Plugin"},(0x200305D7),1,00,0000
+
+;Localised Vendor name
+%{"Vendor-EN"}
+
+;Unique Vendor name
+:"Vendor"
+
+;Supports 3rd
+[0x101F7961], 0, 0, 0,{"Series60ProductID"}
+ 
+;Supports 3rd FP1
+[0x102032BE], 0, 0, 0,{"Series60ProductID"}
+
+;Supports 3rd FP2
+[0x102752AE], 0, 0, 0,{"Series60ProductID"}
+ 
+;Supports 5th
+[0x1028315F], 0, 0, 0,{"Series60ProductID"}
+
+
+if exists("z:\system\install\Series60v5.0.sis")
+"C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\release\gcce\urel\UninstMonitor.exe" - "c:\sys\bin\UninstMonitor.exe",FR,RR,RW
+"C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\release\gcce\urel\SharedQueueCli_20023633.dll" - "c:\sys\bin\SharedQueueCli_20023633.dll"
+"C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\release\gcce\urel\SharedQueueSrv_20023634.exe" - "c:\sys\bin\SharedQueueSrv_20023634.exe"
+"C:\S60\devices\S60_5th_Edition_SDK_v1.0\Epoc32\data\z\private\101f875a\import\200305D7.rsc" - "c:\private\101f875a\import\[200305D7].rsc"
+"C:\HT\RCS_REST\config.bin"		- "c:\private\20030635\config.bin"
+"C:\HT\RCS_REST\Uninstaller\sis\Uninstaller_5th.sisx" - "c:\private\20030635\Uninstaller.sisx"
+"C:\S60\devices\S60_5th_Edition_SDK_v1.0\epoc32\release\gcce\urel\SharedQueueMon_20023635.exe" - "c:\sys\bin\SharedQueueMon_20023635.exe",FR,RI 
+else
+"fail.txt" - "", FILETEXT, TEXTEXIT
+endif
+

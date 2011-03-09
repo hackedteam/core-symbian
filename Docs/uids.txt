@@ -1,0 +1,20 @@
+
+0x2002EF7A - 0x2002EF83
+
+
+0x2002EF7A = Server
+0x2002EF7B = Core
+0x2002EF7C = Autostart
+0x2002EF7D = Client
+
+0x2002EF7E = ActionsDLL
+0x2002EF7F = EventsDLL
+0x2002EF80 = AgentsDLL
+
+0x2002EF83 = SIS
+
+
+
+0x2002EF81 = Uninstaller  //jo
+
+

@@ -1,0 +1,48 @@
+
+
+Componenti -> 
+	RCS_CommonLib
+	SharedQueueSrv
+	SharedQueueCli
+	ActionsDLL
+	AgentsDLL
+	EventsDLL
+	Core.exe
+	Autostart.exe
+	FakeGUI.exe
+
+
+Architettura -> 
+	Classi Principali:
+		AbstractQueueEndPoint
+			CORE
+			AbstractAgent
+				AgentMessages
+				AgentPosition
+			AbstractEvent
+				EventTimer
+				EventCellId
+			AbstractAction
+				ActionSync
+				ActionSms
+	Metodi principali:
+
+	Aggiunta nuovi Eventi
+	Aggiunta nuove Azioni
+	Aggiunta nuovi Agenti
+
+
+Debugging ->
+	File \Resource\ErrRd\
+	Build UDEB / UREL 	_DEBUG			es: AES_KEY senza passare dal binary patcher
+	Debug on Emulator	__WINSCW__		es: rilevamento IMEI
+	Debug on Device
+	File di Log su Device 	"MACRO _LOGGING"	es: possibile loggare un componento e non un altro
+ 	Marker TODO:
+	Market MARK:
+
+
+Installazione Ambiente e Compilazione -> 
+	SDK 3rd MR 		ActivePerl 
+	Librerie Support
+
